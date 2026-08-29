@@ -79,7 +79,7 @@ Import the provided:
 
 Open:
 
-`http://localhost/careu/login.html`
+`http://localhost/careu/loginn.html`
 
 ###  Login
 
@@ -102,7 +102,7 @@ careu/
 ├── appointment.php
 ├── billing.php
 ├── db.php
-├── login.html
+├── loginn.html
 └── careu_db.sql
 ```
 
@@ -113,3 +113,30 @@ The objective of CareU is to provide a basic digital system for managing patient
 ##  Project
 
 **CareU – Hospital Management System**
+
+
+##  Screenshots
+
+###  Login
+
+![Login](Login.png)
+
+###  Dashboard
+
+![Dashboard](Dashboard.png)
+
+###  Patients
+
+![Patients](Patients.png)
+
+###  Doctors
+
+![Doctors](Doctors.png)
+
+###  Appointments
+
+![Appointments](Appointments.png)
+
+###  Billing
+
+![Billing](Billing.png)
