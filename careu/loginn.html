@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CareU Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form{
+                flex-direction:column;
+                display:flex;
+                gap: 1rem;
+                max-width:500px;
+            }
+            form input, form button{
+                padding:0.5rem;
+            }
+            form button{
+                background: #0077b6;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            form button:hover{
+                background: #023e8a;
+            }
+            .LoginContainer{
+                  max-width:500px;
+                  padding:30px;
+                  background:white;
+                  border-radius:8px;
+                  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                }
+            body{
+                margin:0;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height:100vh;
+                background:#f4f7fc;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+<body>
+    <div class="LoginContainer">
+    <h1 style="color: #0077b6;">CareU Management System</h1><br>
+    <form onsubmit="return validateLogin()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required placeholder="Username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter password"><br>
+        <button type="submit" name="Submit">Login</button>
+
+    <br>
+    </form>
+    <script>
+        function validateLogin() {
+            const user=document.getElementById("username").value;
+            const pass=document.getElementById("password").value;
+            if(user==="admin" && pass==="1234") {
+                window.open("dashboard.php", "_self");
+                return false;
+            } else {
+                alert("Invalid credentials!");
+                return false;
+            }
+            }
+    </script>
+    </div>
+</body>
+</html>
